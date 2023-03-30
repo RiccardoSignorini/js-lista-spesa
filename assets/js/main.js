@@ -12,9 +12,12 @@ const arrayList = [
     `latte`,
 ]
 
-for( let i=0; i<arrayList.length; i++ ){
-    const shoppingList = listArray[i];
+let i=0;
+
+while( i<arrayList.length ){
+    const shoppingList = arrayList[i];
     console.log(shoppingList)
+    i++
 }
 
 
