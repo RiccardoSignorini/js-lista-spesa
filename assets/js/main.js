@@ -12,11 +12,20 @@ const arrayList = [
     `latte`,
 ]
 
+const containerList = document.getElementById('list')
+
 let i=0;
 
 while( i<arrayList.length ){
+
     const shoppingList = arrayList[i];
-    console.log(shoppingList)
+
+    const itemList = document.createElement('li')
+
+    itemList.innerText = shoppingList
+
+    containerList.append(itemList)
+
     i++
 }
 
